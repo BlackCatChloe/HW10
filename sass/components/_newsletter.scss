@@ -1,0 +1,82 @@
+/* newsletter form */
+.newsletter-form {
+
+    @media screen and (min-width:$desktop) {
+        margin-left: auto;
+        width:auto;
+    }
+}
+
+.newsletter-form__input-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+    }
+}
+
+.newsletter__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    padding: 15px 16px;
+    width: 100%;
+    
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width:$tablet) {
+       width:450px; 
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 358px;
+
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+}
+
+.newsletter__btn {
+    background-color: $accent-color;
+    /* background-image: url("../images/plane.svg"); */
+    background-repeat: no-repeat;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: $super-light-text;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    @media screen and (min-width:$desktop) {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+.newsletter__icon {
+    width: 24px;
+    height: 24px;
+    fill: $super-light-text;
+
+    margin-left: 10px;
+}

@@ -1,0 +1,120 @@
+.footer__container {
+
+    @extend %container;
+
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__contacts {
+   width:100%;
+   text-align: center;
+
+   @media screen and (min-width:$tablet) {
+    width:auto;
+   }
+
+   @media screen and (min-width:$desktop) {
+        margin-right: 65px;
+        
+        text-align: left;
+    }
+}
+
+.footer__logo {
+    color: $super-light-text;
+    margin-right: 0;
+}
+
+.address {
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.address-list__item {
+    margin-bottom: 4px;
+
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.address-list__link {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
+}
+
+.address-list__link--punson,
+.address-list__link--punson:hover,
+.address-list__link--punson:focus {
+    color: $super-light-text;
+    text-decoration: none;
+}
+.media {
+    width: 100%;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:$tablet) {
+        width:auto;
+        margin-bottom: 0;
+    }
+}
+.media__title,
+.newsletter__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $super-light-text;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width:$desktop) {
+        text-align: left;
+    }
+}
+.footer__tab-holder {
+    display: flex;
+    flex-wrap: wrap;
+      
+    
+    @media screen and (min-width:$tablet) {
+        width: 100%;
+        flex-direction: row; 
+        justify-content: space-between;
+        padding-left: 76px;
+        padding-right: 89px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: auto;
+        justify-content: left;
+        align-items: baseline;
+        padding: 0;
+    }
+}
